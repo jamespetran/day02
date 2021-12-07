@@ -71,3 +71,22 @@ console.log(`all the cute penguins are:`, checkPenguinsFor(penguins));
 console.log(`all the cute penguins are:`, checkPenguinsForOf(penguins));
 
 //this means that for and for..of can do the same thing
+
+function Hat(type, color, size) {
+      this.type = type,
+            this.color = color,
+            this.size = size
+};
+
+const averageTopHat = new Hat(`Top`, `Black`, 14);
+const fedora = new Hat(`Fedora`, `Tiger stripes`, 10);
+const funnyHat = new Hat(`Funny`, `Rainbow`, 18);
+
+console.log(`Our fedora is size ${fedora.size}`);
+function printHat(hatInput) {
+      console.log(`Hat type is`, hatInput.type);
+      console.log(`Hat color is`, hatInput.color);
+}
+
+printHat(fedora);
+printHat({ type: `Baseball`, color: `yellow`, size: 12 });
