@@ -90,3 +90,4 @@ function printHat(hatInput) {
 
 printHat(fedora);
 printHat({ type: `Baseball`, color: `yellow`, size: 12 });
+
